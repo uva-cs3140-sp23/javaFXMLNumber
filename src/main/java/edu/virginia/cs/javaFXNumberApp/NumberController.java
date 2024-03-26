@@ -20,9 +20,40 @@ public class NumberController {
     private Label isPrimeLabel;
     @FXML
     private Label isSquareLabel;
+    @FXML
+    private Button firstButton;
+    @FXML
+    private Button lastButton;
 
     public NumberController() {
         model = new NumberModel();
+    }
+
+
+    @FXML
+    protected void handleFirstButton() {
+        try {
+            errorLabel.setText("");
+            model.first();
+        }
+        catch (RuntimeException e) {
+            errorLabel.setText("Cannot go to the first number right now.");
+            return;
+        }
+        updateAllLabelsForCurrentNumber();
+    }
+
+    @FXML
+    protected void handleLastButton() {
+        try {
+            errorLabel.setText("");
+            model.last();
+        }
+        catch(RuntimeException e) {
+            errorLabel.setText("Cannot go to the last number right now.");
+            return;
+        }
+        updateAllLabelsForCurrentNumber();
     }
 
     @FXML

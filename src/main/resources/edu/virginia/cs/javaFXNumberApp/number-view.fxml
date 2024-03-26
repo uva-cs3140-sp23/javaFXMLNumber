@@ -39,7 +39,9 @@
 
    </GridPane>
    <HBox alignment="CENTER" prefHeight="38.0" prefWidth="400.0" spacing="60.0">
+      <Button fx:id="firstButton" mnemonicParsing="false" onAction="#handleFirstButton" text="First" />
        <Button onAction="#handleBackButton" text="Back" />
        <Button onAction="#handleNextButtonNow" text="Forward" />
+      <Button fx:id="lastButton" mnemonicParsing="false" onAction="#handleLastButton" text="Last" />
    </HBox>
 </VBox>

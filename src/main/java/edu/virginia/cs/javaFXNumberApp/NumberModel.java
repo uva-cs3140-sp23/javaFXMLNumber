@@ -64,4 +64,17 @@ public class NumberModel {
         }
         currentIndex++;
     }
+
+    public void first() {
+        if (numbers.isEmpty()) {
+            throw new RuntimeException("Error: can't use back on empty list");
+        }
+        currentIndex = 0;
+    }
+    public void last() {
+        if (numbers.isEmpty()) {
+            throw new RuntimeException("Error: can't use forward on empty list");
+        }
+        currentIndex = numbers.size() - 1;
+    }
 }
