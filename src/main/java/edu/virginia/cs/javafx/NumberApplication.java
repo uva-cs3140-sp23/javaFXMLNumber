@@ -5,13 +5,16 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.net.URL;
+
 public class NumberApplication extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(NumberApplication.class.getResource("number-view.fxml"));
+        URL view = NumberApplication.class.getResource("number-view.fxml");
+        FXMLLoader fxmlLoader = new FXMLLoader(view);
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Number Application");
+        stage.setTitle("My Number Application");
         stage.setScene(scene);
         stage.show();
     }
