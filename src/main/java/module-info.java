@@ -3,6 +3,6 @@ module edu.virginia.cs.javafx {
     requires javafx.fxml;
 
 
-    opens edu.virginia.cs.javafx to javafx.fxml;
-    exports edu.virginia.cs.javafx;
+    opens edu.virginia.cs.javaFXNumberApp to javafx.fxml;
+    exports edu.virginia.cs.javaFXNumberApp;
 }

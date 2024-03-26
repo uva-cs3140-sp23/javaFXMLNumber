@@ -1,4 +1,4 @@
-package edu.virginia.cs.javafx;
+package edu.virginia.cs.javaFXNumberApp;
 
 import javafx.application.*;
 import javafx.fxml.FXMLLoader;

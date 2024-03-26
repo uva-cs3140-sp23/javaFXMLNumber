@@ -1,4 +1,4 @@
-package edu.virginia.cs.javafx;
+package edu.virginia.cs.javaFXNumberApp;
 
 import javafx.fxml.*;
 import javafx.scene.control.*;
@@ -20,21 +20,10 @@ public class NumberController {
     private Label isPrimeLabel;
     @FXML
     private Label isSquareLabel;
-    @FXML
-    private Button firstButton;
-    @FXML
-    private Button backButton;
-    @FXML
-    private Button forwardButton;
-    @FXML
-    private Button lastButton;
-
 
     public NumberController() {
         model = new NumberModel();
     }
-
-
 
     @FXML
     protected void handleBackButton() {
